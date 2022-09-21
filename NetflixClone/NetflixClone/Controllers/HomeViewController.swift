@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         homeFeedTable.frame = view.bounds
+        homeFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
     }
     
 
@@ -47,6 +48,7 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier:CollectionViewTableViewCell.identifier , for: indexPath) as? CollectionViewTableViewCell else {
             return UITableViewCell()
         }
+        
         return cell
     }
     
