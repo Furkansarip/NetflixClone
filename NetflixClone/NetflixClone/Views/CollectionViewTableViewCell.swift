@@ -8,6 +8,8 @@
 import UIKit
 
 class CollectionViewTableViewCell: UITableViewCell {
+    
+    
 
    static let identifier = "CollectionViewTableViewCell"
 
